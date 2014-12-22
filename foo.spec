@@ -15,10 +15,10 @@ dummy RPM to get RPM environment variables (BUILD and SRC)
 
 %install
 rm -rf $RPM_BUILD_ROOT
-mkdir -p $RPM_BUILD_ROOT/%{_prefix}
+#mkdir -p $RPM_BUILD_ROOT/%{_prefix}
 mkdir -p %{buildroot}/%{_prefix}
-install -d -m 755 $RPM_BUILD_ROOT/%{_prefix}
-install -d -m 755 %{buildroot}/%{_prefix}
+#install -d -m 755 $RPM_BUILD_ROOT/%{_prefix}
+#install -d -m 755 %{buildroot}/%{_prefix}
 cp -rf %{_sourcedir}/* %{buildroot}/%{_prefix}/
 
 file=/tmp/rpm_env
