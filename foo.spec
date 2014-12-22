@@ -1,6 +1,6 @@
 Summary: foo
 Name: foo
-Version: 3
+Version: 4
 Release: 1
 License: GPL
 Group: Development/Languages
