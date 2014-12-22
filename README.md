@@ -1,14 +1,22 @@
 testtito
 ========
 
+
 Reinitialized existing Git repository in /local/0/jenkins/tmp/foo/.git/
+
 # On branch master
+
 # Your branch is ahead of 'origin/master' by 1 commit.
 #
+
 nothing to commit (working directory clean)
+
 Creating tito metadata in: /local/0/jenkins/tmp/foo/rel-eng
+
 Done!
+
 WARNING: no %changelog section find in spec file. Changelog entry was not appended.
+
 Tagging new version of foo: 9-1 -> 10-1
 
 Created tag: foo-10-1
