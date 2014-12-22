@@ -34,5 +34,16 @@ echo PREFIX=%{_prefix}             >>$file
 echo TMP=%{_tmppath}               >>$file
 
 %files
-%dir /tmp/myproject
-/tmp/myproject/hello.txt
+%dir %{_prefix}/%{name}-%{version}
+%dir %{_prefix}/%{name}-%{version}/rel-eng
+%dir %{_prefix}/%{name}-%{version}/src
+%dir %{_prefix}/%{name}-%{version}/rel-eng/packages
+%dir %{_prefix}/%{name}-%{version}/rel-eng/packages/foo
+%dir %{_prefix}/%{name}-%{version}/src/project
+%{_prefix}/%{name}-%{version}.tar.gz
+%{_prefix}/%{name}-%{version}/rel-eng/tito.props
+%{_prefix}/%{name}-%{version}/rel-eng/packages/.readme
+%{_prefix}/%{name}-%{version}/rel-eng/packages/foo
+%{_prefix}/%{name}-%{version}/src/project/hello.txt
+%{_prefix}/%{name}-%{version}/foo.spec
+%{_prefix}/%{name}-%{version}/.gitignore
